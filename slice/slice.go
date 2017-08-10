@@ -1,11 +1,16 @@
 package slice
 
-func Slice1() [3]string {
+func Slice0() []string {
 
-	var country [3]string
-	country[0] = "USA"
-	country[1] = "Brazil"
-	country[2] = "China"
+	country := []string{}
+
+	return country
+}
+
+
+func Slice1() []string {
+
+	country := []string{"USA", "Brazil", "China"}
 
 	return country
 }
