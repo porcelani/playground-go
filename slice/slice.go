@@ -1,12 +1,12 @@
 package slice
 
-func Slice0() []string {
+func Slice0() ([]string, []int) {
 
 	country := []string{}
+	var code []int
 
-	return country
+	return country, code
 }
-
 
 func Slice1() []string {
 
@@ -14,3 +14,23 @@ func Slice1() []string {
 
 	return country
 }
+
+func SliceMake() []string {
+
+	countries := []string{}
+	countries = make([]string, 5)
+
+	return countries
+}
+
+func SliceMakeWithAdd() []string {
+
+	countries := []string{}
+	countries = make([]string, 5)
+
+	countries[0]="Brazil"
+	countries[1]="USA"
+
+	return countries
+}
+
